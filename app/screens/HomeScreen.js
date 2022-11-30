@@ -1,14 +1,13 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image, Button, SafeAreaView, ImageBackground, TouchableOpacity, Pressable } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';  
+import { Text, View, StyleSheet, Image, Button, SafeAreaView, ImageBackground, TouchableOpacity, Pressable, Modal } from 'react-native';
+//import { NavigationContainer } from '@react-navigation/native';
+//import { createNativeStackNavigator } from '@react-navigation/native-stack';  
 
 function HomeScreen(props) {
     return (
-    <ImageBackground source={require('../assets/logo-og.png')} style={styles.image}>
-        <Pressable style={styles.button} onPress={() => this.props.navigation.navigate('Profile')}>
-            <Text style={styles.text}>Start</Text>
-        </Pressable>
-    </ImageBackground>
+    <Pressable style={styles.image} onPress={() => alert('The whole screen is now a button')}>
+        <Image source={require('../assets/BGUHome.png')} style={styles.image}/>
+    </Pressable>
     );
 }
 
@@ -17,6 +16,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        resizeMode: "contain",
     },
     button: {
         width: "50%",
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'blue',
         position: "absolute",
-        top: "75%",
+        top: "25%",
     },
     text: {
         color: "white",
