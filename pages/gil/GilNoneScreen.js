@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button,ImageBackground, Image} from 'react-native'; // importing components
 
 // About screen contains the text “You are on the about page” and a button.
-class GillSixScreen extends Component {
+class GilNoneScreen extends Component {
   render() {
-    const campusMap = require("../../screenImages/academicRoom6.png"); 
+    const campusMap = require("../../screenImages/academicFloorPlanMain.png"); 
     return (
       <View style={styles.container}>
         <Image source = {campusMap} style = {styles.header} resizeMode='contain'>
@@ -48,4 +48,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GillSixScreen;
+export default GilNoneScreen;

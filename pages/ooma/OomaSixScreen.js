@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button,ImageBackground, Image} from 'react-native'; // importing components
 
 // About screen contains the text “You are on the about page” and a button.
-class GillSixScreen extends Component {
+class OomaSixScreen extends Component {
   render() {
     const campusMap = require("../../screenImages/academicRoom6.png"); 
     return (
@@ -12,7 +12,7 @@ class GillSixScreen extends Component {
         <View style={styles.bottomContainer}>
         <Button
             title="View on Map"
-            onPress={() => this.props.navigation.navigate('GilNav')}
+            onPress={() => this.props.navigation.navigate('OomaNav')}
         /> 
          <Button
             title="Back to home"
@@ -48,4 +48,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GillSixScreen;
+export default OomaSixScreen;

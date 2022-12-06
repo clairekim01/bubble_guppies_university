@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native'; // importing components
+import { StyleSheet, Text, View, Button,ImageBackground, Image} from 'react-native'; // importing components
 
 // About screen contains the text “You are on the about page” and a button.
-class GilThreeScreen extends Component {
+class GillThreeScreen extends Component {
   render() {
+    const campusMap = require("../../screenImages/academicRoom3.png"); 
     return (
       <View style={styles.container}>
-        <Text>You are on the three page</Text>
+        <Image source = {campusMap} style = {styles.header} resizeMode='contain'>
+        </Image>
+        <View style={styles.bottomContainer}>
         <Button
+            title="View on Map"
+            onPress={() => this.props.navigation.navigate('GilNav')}
+        /> 
+         <Button
             title="Back to home"
             onPress={() => this.props.navigation.navigate('Home')}
         /> 
-
+        </View>
       </View>
     );
   }
@@ -24,6 +31,21 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    header: {
+        flex:1,
+        alignSelf: 'center',
+        width: '100%',
+        height: null, 
+        position: 'relative',
+        bottom:0
+    },
+    bottomContainer: {
+        position: 'absolute',
+        bottom:10,
+        left:10,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
   });
 
-export default GilThreeScreen;
+export default GillThreeScreen;

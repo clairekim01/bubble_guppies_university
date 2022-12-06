@@ -2,39 +2,39 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native'; // importing components
 
 // About screen contains the text “You are on the about page” and a button.
-class GilScreen extends Component {
+class DeemaScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>You are on the Gil page</Text>
+        <Text>You are on the Deema page</Text>
         <Text>Which room would you like to navigate to?</Text>
         <Button
             title="1"
-            onPress={() => this.props.navigation.navigate('GilOne')}
+            onPress={() => this.props.navigation.navigate('DeemaOne')}
         />
         <Button
             title="2"
-            onPress={() => this.props.navigation.navigate('GilTwo')}
+            onPress={() => this.props.navigation.navigate('DeemaTwo')}
         />
         <Button
             title="3"
-            onPress={() => this.props.navigation.navigate('GilThree')}
+            onPress={() => this.props.navigation.navigate('DeemaThree')}
         />
         <Button
             title="4"
-            onPress={() => this.props.navigation.navigate('GilFour')}
+            onPress={() => this.props.navigation.navigate('DeemaFour')}
         />
         <Button
             title="5"
-            onPress={() => this.props.navigation.navigate('GilFive')}
+            onPress={() => this.props.navigation.navigate('DeemaFive')}
         />
         <Button
             title="6"
-            onPress={() => this.props.navigation.navigate('GilSix')}
+            onPress={() => this.props.navigation.navigate('DeemaSix')}
         />
         <Button
             title="None"
-            onPress={() => this.props.navigation.navigate('GilNone')}
+            onPress={() => this.props.navigation.navigate('DeemaNone')}
         />
         <Button
         title="Back to home"
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GilScreen;
+export default DeemaScreen;

@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button,ImageBackground, Image} from 'react-native'; // importing components
+import { StyleSheet, Text, View, Button,ImageBackground} from 'react-native'; // importing components
 
 // About screen contains the text “You are on the about page” and a button.
-class GillSixScreen extends Component {
+class AnemoneOneScreen extends Component {
   render() {
-    const campusMap = require("../../screenImages/academicRoom6.png"); 
+    const campusMap = require("../../screenImages/anemone1Nav.png"); 
     return (
       <View style={styles.container}>
-        <Image source = {campusMap} style = {styles.header} resizeMode='contain'>
-        </Image>
+        <Text>You are on the Anemone One Nav Screen page</Text>   
+        <ImageBackground source = {campusMap} style = {styles.header} resizeMode='stretch'>
+        </ImageBackground>
         <View style={styles.bottomContainer}>
         <Button
-            title="View on Map"
-            onPress={() => this.props.navigation.navigate('GilNav')}
-        /> 
-         <Button
             title="Back to home"
             onPress={() => this.props.navigation.navigate('Home')}
         /> 
@@ -32,11 +29,11 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     header: {
-        flex:1,
+        backgroundColor: '#c6bafe',
         alignSelf: 'center',
-        width: '100%',
-        height: null, 
-        position: 'relative',
+        height: '100%',
+        width:'100%', 
+        position: 'absolute',
         bottom:0
     },
     bottomContainer: {
@@ -48,4 +45,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GillSixScreen;
+export default AnemoneOneScreen;

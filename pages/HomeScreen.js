@@ -18,51 +18,51 @@ class HomeScreen extends Component {
         />
         <Button
           title="Nonny"
-          onPress={() => Alert.alert('Nonny button pressed')}
+          onPress={() => this.props.navigation.navigate('Nonny')}
         />
         <Button
           title="Deema"
-          onPress={() => Alert.alert('Deema button pressed')}
+          onPress={() => this.props.navigation.navigate('Deema')}
         />
         <Button
           title="Ooma"
-          onPress={() => Alert.alert('Ooma button pressed')}
+          onPress={() => this.props.navigation.navigate('Ooma')}
         />
         <Button
           title="Goby"
-          onPress={() => Alert.alert('Goby button pressed')}
+          onPress={() => this.props.navigation.navigate('Goby')}
         />
         <Button
           title="Grub Guppy"
-          onPress={() => Alert.alert('Grub Guppy button pressed')}
+          onPress={() => this.props.navigation.navigate('GrubScreen')}
         />
         <Button
           title="Feeding Frenzy Cafe"
-          onPress={() => Alert.alert('Feeding Frenzy Cafe button pressed')}
+          onPress={() => this.props.navigation.navigate('FrenzyScreen')}
         />
         <Button
           title="Anemone 1"
-          onPress={() => Alert.alert('Anemone 1 button pressed')}
+          onPress={() => this.props.navigation.navigate('AneOne')}
         />
         <Button
           title="Anemone 2"
-          onPress={() => Alert.alert('Anemone 2 button pressed')}
+          onPress={() => this.props.navigation.navigate('AneTwo')}
         />
         <Button
           title="Anemone 3"
-          onPress={() => Alert.alert('Anemone 3 button pressed')}
+          onPress={() => this.props.navigation.navigate('AneThree')}
         />
         <Button
           title="Anemone 4"
-          onPress={() => Alert.alert('Anemone 4 button pressed')}
+          onPress={() => this.props.navigation.navigate('AneFour')}
         />
         <Button
           title="Library"
-          onPress={() => Alert.alert('Library button pressed')}
+          onPress={() => this.props.navigation.navigate('LibScreen')}
         />
         <Button
           title="Rac"
-          onPress={() => Alert.alert('Rac button pressed')}
+          onPress={() => this.props.navigation.navigate('RacScreen')}
         />
 
       </View>
