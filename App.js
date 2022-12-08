@@ -73,6 +73,7 @@ import LibraryScreen from './pages/LibraryScreen';
 import LoadScreen from './pages/LoadScreen';
 import DiningScreen from './pages/DiningScreen';
 import ClubScreen from './pages/ClubScreen';
+import CalendarScreen from './pages/CalendarScreen';
 
 const Stack = createStackNavigator();// createStackNavigator is used to create a stack like structure. 
 //Whenever we navigate to a screen, it gets pushed to the stack and whenever we click the back button, 
@@ -318,6 +319,10 @@ class App extends Component {
           <Stack.Screen
             name="ClubScreen"
             component={ClubScreen}
+          />
+          <Stack.Screen
+            name="CalendarScreen"
+            component={CalendarScreen}
           />
 
         </Stack.Navigator>
