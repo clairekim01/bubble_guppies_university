@@ -27,7 +27,7 @@ class GillSixScreen extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#c6bafe',
       alignItems: 'center',
       justifyContent: 'center',
     },

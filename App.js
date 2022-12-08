@@ -69,7 +69,6 @@ import AnemoneFourScreen from './pages/anemone/AnemoneFourScreen';
 //other
 import RacScreen from './pages/RacScreen';
 import LibraryScreen from './pages/LibraryScreen';
-// New imports I made - Zach
 import LoadScreen from './pages/LoadScreen';
 import DiningScreen from './pages/DiningScreen';
 import ClubScreen from './pages/ClubScreen';
@@ -86,7 +85,7 @@ class App extends Component {
     return (
       <NavigationContainer>
         <Stack.Navigator
-          screenOptions={{ headerStyle: { backgroundColor: '#c6bafe' } }}> 
+          screenOptions={{ headerStyle: { backgroundColor: '#c6bafe' } }}>
           <Stack.Screen
             name="BGU"
             component={LoadScreen}
