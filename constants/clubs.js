@@ -14,27 +14,27 @@ export const CLUBDATA = [
     {
         id: "CK-C2",
         name: "UX/UI Engineering",
-        info: "I no longer feel like filling this out :)"
+        info: "Join our group of professionals interested in learning more and delevoping skills with UX/UI. Network and meet new people trying to get established in the field, and get the best tips to further your career.\n\nMondays 6:30pm - 7:30pm\n\nLocation: Nonny Hall - Room 4"
     },
     {
         id: "CK-C3",
         name: "Cafe Hopping",
-        info: "I no longer feel like filling this out :)"
+        info: "Want to find the best spots to eat and study? Come out and go around to the best spots near campus. Find the best food and drinks around with a group of friends!\n\nSundays 10:00am\n\nLocation: Meet at Nonny Hall - Room 1"
     },
     {
         id: "OK-C1",
         name: "Muslim Student Association",
-        info: "I no longer feel like filling this out :)"
+        info: "Want to connect to your culture with people of similar backgrounds or just want to learn more about the Muslim culture? Then come out to our meetings!\n\nFridays 7:30pm - 9:00pm\n\nLocation: Goby Hall - Room 2"
     },
     {
         id: "OK-C2",
         name: "Car Club",
-        info: "I no longer feel like filling this out :)"
+        info: "Club for automotive enthusiasts. Not an enthusiant and just want to look at cool cars? Then come out anyways and talk to our memebers!\n\nSaturdays 1:00pm - 2:30pm\n\nLocation: Meet at Goby Hall - Room 3"
     },
     {
         id: "OK-C3",
         name: "Gaming Club",
-        info: "I no longer feel like filling this out :)"
+        info: "Want to meet new people and bond over your favorite games? Look no further, come find your squad or just challenge people. We host a friendly environment but also have competitive teams!\n\nFridays 8:00pm - 10:00pm\n\nLocation: Goby Hall - Room 6"
     },
     {
         id: "YC-C1",
