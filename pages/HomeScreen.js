@@ -72,6 +72,10 @@ class HomeScreen extends Component {
           title="Clubs"
           onPress={() => this.props.navigation.navigate('ClubScreen')}
         />
+        <Button
+          title="Calendar"
+          onPress={() => this.props.navigation.navigate('CalendarScreen')}
+        />
 
       </View>
     );
