@@ -9,6 +9,10 @@ class HomeScreen extends Component {
       <View style={styles.container}>
         <Text  style={styles.title}>Which Building would you like to navigate to?</Text>
         <Button
+            title="About page"
+            onPress={() => this.props.navigation.navigate('About')}
+        />
+        <Button
           title="Gil"
           onPress={() => this.props.navigation.navigate('Gil')}
         />
@@ -60,7 +64,6 @@ class HomeScreen extends Component {
           title="Rac"
           onPress={() => this.props.navigation.navigate('RacScreen')}
         />
-        <Text  style={styles.title}>Campus Info</Text>
         <Button
           title="Dining"
           onPress={() => this.props.navigation.navigate('DiningScreen')}
