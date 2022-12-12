@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import 'react-native-gesture-handler';
 
 import React, { Component } from 'react';
@@ -329,23 +328,10 @@ class App extends Component {
       </NavigationContainer>
     );
   }
-=======
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
->>>>>>> main
 }
 
 const styles = StyleSheet.create({
   container: {
-<<<<<<< HEAD
      backgroundColor: '#fff',
     flex: 1,
     justifyContent: 'center',
@@ -354,11 +340,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-=======
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
->>>>>>> main

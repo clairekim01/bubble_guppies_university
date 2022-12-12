@@ -1,12 +1,7 @@
 {
   "expo": {
-<<<<<<< HEAD
     "name": "newBubbleApp",
     "slug": "newBubbleApp",
-=======
-    "name": "my-new-project",
-    "slug": "my-new-project",
->>>>>>> main
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
