@@ -1,14 +1,15 @@
 import React, { useState, Component } from "react";
-import { SafeAreaView, StyleSheet, Text, StatusBar, FlatList, TouchableOpacity, Alert  } from 'react-native';
-import { CLUBDATA } from '../constants/clubs'
+import { SafeAreaView, StyleSheet, Text, StatusBar, FlatList, TouchableOpacity, Alert  } from 'react-native'; //important imports
+import { CLUBDATA } from '../constants/clubs' // Our club data
 
-
+//For a better UI to show which button was selected
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
   <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
     <Text style={[styles.title, textColor]}>{item.name}</Text>
   </TouchableOpacity>
 );
 
+//Displays list of Clubs and when the button is pressed gives the user a pop up of information
 const ClubApp = () => {
   const [selectedId, setSelectedId] = useState(null);
 
@@ -38,6 +39,7 @@ const ClubApp = () => {
   );
 };
 
+// For navigation on home screen
 class ClubScreen extends Component {
   render() {
     return <ClubApp/>;

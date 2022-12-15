@@ -1,32 +1,17 @@
 import React, { Component } from 'react';
-//import React, { createRef } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
-import { Agenda } from 'react-native-calendars';
+import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native'; //important imports
+import { Agenda } from 'react-native-calendars'; //calendar library
 
-//const agendaRef = createRef();
 
 const CalendarApp = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Agenda
-        //ref={agendaRef}
-
-        //onDayPress={(day) => console.log(`Date pressed: ${day.dateString}`)}
 
         // fix bug for loading indefinitely on days with no items
         renderEmptyData={() => { return null }}
         selected='2022-12-01'
-        
-        //initialDate='2022-12-07'
-        //minDate="2022-12-01"
-        //maxDate="2023-12-31"
-        //disableAllTouchEventsForDisabledDays={true}
+
         
         items={{
           // December important dates
@@ -48,7 +33,7 @@ const CalendarApp = () => {
           '2023-01-23': [{name: 'New Non-degree Seeking Registration Begins'}],
           '2023-01-30': [{name: 'First Day Of Classes'}, {name: 'Late Registration Begins'}]
         }}
-        renderItem={(item, isFirst) => (
+        renderItem={(item) => (
           <TouchableOpacity style={styles.item}>
             <Text style={styles.itemText}>{item.name}</Text>
           </TouchableOpacity>
@@ -58,6 +43,7 @@ const CalendarApp = () => {
   );
 };
 
+// For navigation on home screen
 class CalendarScreen extends Component {
   render() {
     return <CalendarApp/>;

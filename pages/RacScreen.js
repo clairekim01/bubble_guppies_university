@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button,ImageBackground} from 'react-native'; // importing components
+import { StyleSheet, View, Button,ImageBackground} from 'react-native'; // importing components
 
-// About screen contains the text “You are on the about page” and a button.
+//Sets up and builds the RAC map screen
 class RacScreen extends Component {
   render() {
     const campusMap = require("../screenImages/racNav.png"); 
     return (
-      <View style={styles.container}>
-        <Text>You are on the Rac Nav Screen page</Text>   
+      <View style={styles.container}> 
         <ImageBackground source = {campusMap} style = {styles.header} resizeMode='stretch'>
         </ImageBackground>
         <View style={styles.bottomContainer}>

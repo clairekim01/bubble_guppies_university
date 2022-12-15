@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button,ImageBackground} from 'react-native'; // importing components
+import { StyleSheet, View, Button,ImageBackground} from 'react-native'; // importing components
 
-// About screen contains the text “You are on the about page” and a button.
+// Builds the screen for the dining hall with navigation
 class GrubScreen extends Component {
   render() {
     const campusMap = require("../screenImages/grubGuppyNav.png"); 
     return (
-      <View style={styles.container}>
-        <Text>You are on the Grub Guppies Screen page</Text>   
+      <View style={styles.container}>   
         <ImageBackground source = {campusMap} style = {styles.header} resizeMode='stretch'>
         </ImageBackground>
         <View style={styles.bottomContainer}>

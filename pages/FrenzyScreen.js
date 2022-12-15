@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button,ImageBackground} from 'react-native'; // importing components
+import { StyleSheet, View, Button,ImageBackground} from 'react-native'; // importing components
 
-// About screen contains the text “You are on the about page” and a button.
+// Builds the screen for the other dining hall with navigation
 class FrenzyScreen extends Component {
   render() {
     const campusMap = require("../screenImages/frenzyCafeNav.png"); 
     return (
-      <View style={styles.container}>
-        <Text>You are on the Feeding Frenzy Cafe Screen page</Text>   
+      <View style={styles.container}> 
         <ImageBackground source = {campusMap} style = {styles.header} resizeMode='stretch'>
         </ImageBackground>
         <View style={styles.bottomContainer}>

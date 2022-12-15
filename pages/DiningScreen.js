@@ -1,14 +1,15 @@
 import React, { useState, Component } from "react";
-import { StyleSheet, Text, StatusBar, FlatList, TouchableOpacity, Alert, SafeAreaView } from 'react-native';
-import { DININGDATA } from '../constants/dining'
+import { StyleSheet, Text, StatusBar, FlatList, TouchableOpacity, Alert, SafeAreaView } from 'react-native'; //important imports
+import { DININGDATA } from '../constants/dining' //our dining data
 
-
+//For a better UI to show which button was selected
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
   <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
     <Text style={[styles.title, textColor]}>{item.name}</Text>
   </TouchableOpacity>
 );
 
+//Displays list of dining options and when the button is pressed gives the user a pop up of information
 const DiningApp = () => {
   const [selectedId, setSelectedId] = useState(null);
 
@@ -38,6 +39,7 @@ const DiningApp = () => {
   );
 };
 
+// For navigation on home screen
 class DiningScreen extends Component {
   render() {
     return <DiningApp/>;

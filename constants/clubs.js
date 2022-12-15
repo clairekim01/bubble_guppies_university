@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Made up Club Data to populate information given to user
 export const CLUBDATA = [
     {
         id: "ZD-C1",

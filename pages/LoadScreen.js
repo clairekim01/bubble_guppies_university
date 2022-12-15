@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, Pressable } from 'react-native';
 
+// Build the load page of background art
 class LoadScreen extends Component {
     render() {
     return (

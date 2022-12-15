@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button} from 'react-native'; // importing components
 
-// The home screen contains the text “You are on the home page” and a button.
+// Landing Screen for user to pick what information they would like to see
 class HomeScreen extends Component {
   render() {
     return (

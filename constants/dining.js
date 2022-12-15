@@ -1,5 +1,6 @@
 import React from "react";
 
+//Made up Dining Data to populate information given to user
 export const DININGDATA = [
     {
         id: 'CK-D1',
